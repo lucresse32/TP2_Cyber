@@ -8,11 +8,11 @@
 Voici les étapes détaillées pour pouvoir modifier le courriel / téléphone sur la page demandée:
 
 ### Étape 1
-En entrant l'adresse Ip du serveur linux dans nmap j'ai pu voir tout les prts ouverts notament le 22 pour ssh 
+En entrant l'adresse Ip du serveur linux dans nmap j'ai pu voir tout les ports ouverts notament le 22 pour ssh 
 ![alt text](image.png)
 
 ### Étape 2
-Je nme suis connectée ensuite en ssh par ligne de commande a son compte avec cette commande ssh bob@192.168.0.15 et avec l'indice du mot de passe j'ai essayé tout les cas possible et j'ai trouvé Sophie2012!
+Je nme suis connectée ensuite en ssh par ligne de commande a son compte avec cette commande ssh bob@192.168.0.15 et avec l'indice du mot de passe j'ai essayé tout les cas possible et j'ai trouvé Sophie2014!
 ![alt text](image-1.png)
 et j'ai pu me connecter 
 ![alt text](image-2.png)
@@ -20,7 +20,7 @@ et j'ai pu me connecter
 ### Étape 3
 - Une fois sur son compte je me suis déplacée dans le fichier html avec la commande cd /var/www/html et j'ai pu voir tout les fichiers du site : 
 ![alt text](image-3.png)
-- J'ai donc pu entrer et modifier  le fichier contact.html avec la commande nano et modifier le numéro de téléphone 
+- J'ai donc pu entrer et modifier  le fichier contact.html avec la commande nano et modifier le numéro de téléphone et le courriel
 ![alt text](image-4.png)
 
 
