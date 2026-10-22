@@ -51,19 +51,26 @@ Lorsque j'essaie de modifier le fichier de contact avec le compte de Bob, le sys
 
 **Étape de l'exploit brisée** : Ce correctif bloque directement l'étape de la modification du fichier contact.html (l'étape 4 de l'attaque).
 
-## Correctif 2 : 
+## Correctif 2 : Changement du mot de passe de Bob 
 
-Commandes à effectuer ou étapes à mettre en place. 
+Pour empêcher qu'un attaquant puisse se connecter avec un mot de passe qui a fuité sur le dark web j'ai modifier le mot de passe de bob avec un mot de passe plus fort 
+
+**Commandes utilisées** :  
+
+sudo passwd bob : Permet à l'administrateur de réinitialiser et de remplacer l'ancien mot de passe faible de Bob par un nouveau mot de passe fort et totalement inconnu de l'attaquant. Pour le coup j'ai mis le même que celui de Daboss
+![alt text](image-10.png)
 
 Capture d'écran de l'exploit qui ne fonctionne plus : 
+
+
+**Étape de l'exploit brisée** : Ce correctif bloque l'étape 2 (Connexion SSH). L'attaquant ne peut plus utiliser l'ancien mot de passe fuité (Sophie2014!) pour se connecter.
 
 ## Correctif 3 : Installation et configuration d'un pare-feu (UFW)
 
 J'ai configuré le pare-feu de la machine pour bloquer les connexions non désirées tout en laissant passer le trafic web.
 
-
-
 **Commandes utilisées** : 
+
 
 sudo ufw default deny incoming : pour bloquer par défaut toutes les connexions entrantes venant de l'extérieur.
 sudo ufw default allow outgoing : pour laisser la machine communiquer librement vers l'extérieur (pour aller sur Internet, faire des mises à jour, etc.).
