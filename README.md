@@ -40,9 +40,9 @@ Pour empêcher qu'un utilisateur standard puisse modifier les fichiers du site, 
 
 **Commandes utilisées** :  
 
-sudo chown -R root:root /var/www/html : Change le propriétaire et le groupe de tout le dossier du site web pour les mettre à root (l'administrateur plus haut ). L'utilisateur normal (Bob) perd ainsi la propriété des fichiers.
+`sudo chown -R root:root /var/www/html` : Change le propriétaire et le groupe de tout le dossier du site web pour les mettre à root (l'administrateur plus haut ). L'utilisateur normal (Bob) perd ainsi la propriété des fichiers.
 
-sudo chmod -R 755 /var/www/html : Modifie les permissions pour que seul root puisse modifier ou écrire dans le dossier, tandis que les autres utilisateurs (et le serveur web) ont uniquement le droit de lire et d'afficher le site.
+`sudo chmod -R 755 /var/www/html` : Modifie les permissions pour que seul root puisse modifier ou écrire dans le dossier, tandis que les autres utilisateurs (et le serveur web) ont uniquement le droit de lire et d'afficher le site.
 Résultat plus claire des permissions avec la commande ls -l : ![alt text](image-8.png)
 
 Capture d'écran de l'exploit qui ne fonctionne plus :
@@ -70,12 +70,10 @@ Capture d'écran de l'exploit qui ne fonctionne plus :
 J'ai configuré le pare-feu de la machine pour bloquer les connexions non désirées tout en laissant passer le trafic web.
 
 **Commandes utilisées** : 
-
-
-sudo ufw default deny incoming : pour bloquer par défaut toutes les connexions entrantes venant de l'extérieur.
-sudo ufw default allow outgoing : pour laisser la machine communiquer librement vers l'extérieur (pour aller sur Internet, faire des mises à jour, etc.).
-sudo ufw allow 80/tcp : Autorise uniquement le trafic Web (port 80) pour que les clients puissent voir le site.
-sudo ufw enable : Active officiellement le pare-feu pour appliquer toutes ces règles.
+`sudo ufw default deny incoming` : pour bloquer par défaut toutes les connexions entrantes venant de l'extérieur.
+`sudo ufw default allow outgoing` : pour laisser la machine communiquer librement vers l'extérieur (pour aller sur Internet, faire des mises à jour, etc.).
+`sudo ufw allow 80/tcp` : Autorise uniquement le trafic Web (port 80) pour que les clients puissent voir le site.
+`sudo ufw enable` : Active officiellement le pare-feu pour appliquer toutes ces règles.
 ![alt text](image-7.png)
 **Capture d'écran de l'exploit qui ne fonctionne plus** : 
 * Lorsque j'essaie de me connecter en ssh: ![alt text](image-5.png)
