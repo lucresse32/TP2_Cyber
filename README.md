@@ -74,7 +74,9 @@ J'ai configuré le pare-feu de la machine pour bloquer les connexions non désir
 `sudo ufw default allow outgoing` : pour laisser la machine communiquer librement vers l'extérieur (pour aller sur Internet, faire des mises à jour, etc.).
 `sudo ufw allow 80/tcp` : Autorise uniquement le trafic Web (port 80) pour que les clients puissent voir le site.
 `sudo ufw enable` : Active officiellement le pare-feu pour appliquer toutes ces règles.
+
 ![alt text](image-7.png)
+
 **Capture d'écran de l'exploit qui ne fonctionne plus** : 
 * Lorsque j'essaie de me connecter en ssh: ![alt text](image-5.png)
 * Lorsque j'essaie le balayage avec nmap c'est juste le port 80 qui est ouvert : ![alt text](image-6.png)
