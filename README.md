@@ -57,11 +57,11 @@ Pour empêcher qu'un attaquant puisse se connecter avec un mot de passe qui a fu
 
 **Commandes utilisées** :  
 
-sudo passwd bob : Permet à l'administrateur de réinitialiser et de remplacer l'ancien mot de passe faible de Bob par un nouveau mot de passe fort et totalement inconnu de l'attaquant. Pour le coup j'ai mis le même que celui de Daboss
+sudo passwd bob : Permet à l'administrateur de réinitialiser et de remplacer l'ancien mot de passe faible de Bob par un nouveau mot de passe fort et totalement inconnu de l'attaquant. 
 ![alt text](image-10.png)
 
 Capture d'écran de l'exploit qui ne fonctionne plus : 
-
+Pas besoin, car un mot de passe doit rester confidentiel et ne doit pas être connu de tous .
 
 **Étape de l'exploit brisée** : Ce correctif bloque l'étape 2 (Connexion SSH). L'attaquant ne peut plus utiliser l'ancien mot de passe fuité (Sophie2014!) pour se connecter.
 
@@ -79,4 +79,4 @@ J'ai configuré le pare-feu de la machine pour bloquer les connexions non désir
 * Lorsque j'essaie de me connecter en ssh: ![alt text](image-5.png)
 * Lorsque j'essaie le balayage avec nmap c'est juste le port 80 qui est ouvert : ![alt text](image-6.png)
 
-**Étape de l'exploit brisée** : Ce correctif bloque l'étape du scan et de l'accès réseau (les étapes 1 et 2), car les ports non nécessaires sont fermés  depuis l'extérieur.
+**Étape de l'exploit brisée** : Ce correctif bloque l'étape du scan et de l'accès réseau (les étapes 1 et 2), car les ports non nécessaires sont fermés depuis l'extérieur.
