@@ -9,14 +9,14 @@ Voici les étapes détaillées pour pouvoir modifier le courriel / téléphone s
 
 ### Étape 1 : Repérage des ports ouverts avec Nmap
 
- **Commande utilisée :** `nmap 192.168.0.15`
+ **Commande utilisée :** Aucune j'ai juste ouvert l'application 
  **Objectif et effet :** Scanner la machine cible depuis le poste Windows afin d'identifier les services actifs et les ports TCP ouverts à distance. Le scan a permis de découvrir que le service HTTP (port 80) et le service SSH (port 22) étaient ouverts et accessibles.
 ![alt text](image.png)
 
 ### Étape 2 : Authentification distante via SSH (Réutilisation de mot de passe)
 
  **Commande utilisée** : `ssh bob@192.168.0.15`
- **Objectif et effet** : Tenter une connexion à distance sur le serveur Linux en utilisant les informations collectées . À partir des prénoms et années de naissance des enfants de Bob, le mot de passe `Sophie2014!` a permis de valider l'authentification SSH et d'obtenir un accès à distance sur la machine hôte.
+ **Objectif et effet** : Tenter une connexion à distance sur le serveur Linux en utilisant les informations collectées . À partir des prénoms et années de naissance des enfants de Bob, le mot de passe `Sophie2014!` m'a permis de valider l'authentification SSH et d'obtenir un accès à distance sur la machine de bob.
 
 ![alt text](image-1.png) et j'ai pu me connecter  ![alt text](image-2.png)
 
