@@ -79,4 +79,4 @@ J'ai configuré le pare-feu de la machine pour bloquer les connexions non désir
 * Lorsque j'essaie de me connecter en ssh: ![alt text](image-5.png)
 * Lorsque j'essaie le balayage avec nmap c'est juste le port 80 qui est ouvert : ![alt text](image-6.png)
 
-**Étape de l'exploit brisée** : Ce correctif bloque l'étape du scan et de l'accès réseau (les étapes 1 et 2), car les ports  non nécessaires sont fermés ou filtrés depuis l'extérieur.
+**Étape de l'exploit brisée** : Ce correctif bloque l'étape du scan et de l'accès réseau (les étapes 1 et 2), car les ports non nécessaires sont fermés  depuis l'extérieur.
